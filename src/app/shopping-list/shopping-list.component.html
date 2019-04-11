@@ -1,1 +1,4 @@
-<app-shopping-list></app-shopping-list>
+<app-shopping-edit></app-shopping-edit>
+<mat-list-item *ngFor="let ingredient of ingredients">
+    <p mat-line> {{ ingredient.name }} ({{ ingredient.amount }}) </p>
+</mat-list-item>
