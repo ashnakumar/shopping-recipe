@@ -1,0 +1,7 @@
+img {
+  background-size: cover;
+}
+
+mat-card {
+  max-width: 400px
+}

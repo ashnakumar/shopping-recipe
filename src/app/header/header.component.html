@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" layout="row" style="position: fixed;">
+  <span>Recipe Book</span>
+  <button mat-button [matMenuTriggerFor]="recipes">Recipes</button>
+  <mat-menu #recipes="matMenu">
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="shoppingList">Shopping List</button>
+  <mat-menu #shoppingList="matMenu">
+  </mat-menu>
+  <span class="fill"></span>
+  <button mat-button [matMenuTriggerFor]="menu"> Manage
+    <mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      1
+    </button>
+    <button mat-menu-item>
+      2
+    </button>
+  </mat-menu>
+</mat-toolbar>

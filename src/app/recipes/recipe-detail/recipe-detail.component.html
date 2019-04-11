@@ -1,3 +1,17 @@
-<p>
-  recipe-detail works!
-</p>
+<h1>Recipe Name</h1>
+<button mat-button [matMenuTriggerFor]="menu"> Manage Recipe
+  <mat-icon>arrow_drop_down</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    To Shopping List
+  </button>
+  <button mat-menu-item>
+    Edit Recipe
+  </button>
+  <button mat-menu-item>
+    Delete Recipe
+  </button>
+</mat-menu>
+<p> Description</p>
+<p>Ingredients</p>
